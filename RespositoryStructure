@@ -1,0 +1,217 @@
+Mpay App/ StateManagement use Provider>>>>>>>>>>>>>>>>>
+│
+├── android/                # Android-specific files
+├── ios/                    # iOS-specific files
+├── lib/                    # Main application code
+│   ├── main.dart/           # Entry point of the application use like:- setting ,route, state management 
+│   │__ localization/
+           |__app_localizations.dart
+           |
+│   │__ models/
+|   |      |__best_offer/
+|   │      |        |_bestoffermodel.dart  
+           |
+           |__book_top_model/
+           |        |
+           |        |_booktop.dart  
+           |
+           |__deepclean/
+           |         |
+           |         |_deepclean.dart 
+           |         |_sunCategorymodel.dart
+           |         |
+           |
+           |__pestcontrolmodel/
+           |        |
+           |        |__pestcontrolmodel.dart  
+           |
+           |__services/
+           |         |
+           |         |_timemodel.dart 
+           |         |_viewServicemodel.dart
+           |         |
+           |
+           |__app_state.dart
+           |
+           |__app_theme.dart
+           |
+           |__cart_models.dart
+           |
+           |__deepcleanly.dart
+           |
+           |__getcartmodel.dart
+           |
+           |__language.dart
+           |
+           |__time_slottime.dart
+           |
+           
+│   │__ pages
+           |__about/
+           |     |
+           |     |_timemodel.dart 
+           |     |
+           |
+           |__common/
+           |     |
+           |     |_IOS/
+           |     |   |__validation_alert.dart
+           |     |   |
+           |     |_shimmer
+           |     |   |_getItemshimmer
+           |     |_api_url.drt
+           |     |_bottomnavigation.dart
+           |     |_bottombar.dart
+           |     |-dotDivider.dart
+           |     |_myClipper.dart
+           |     |_preUtils.dart
+           |     |_Ratebar.drt
+           |     | 
+           |
+           |
+           |__getlocation/
+           |     |_globalscanerbar.dart
+           |     |-locationDivider.dart
+           |     |_location.dart
+           |     |_mainLocation.dart
+           |
+           |__home/
+           |     |
+           |     |_account/
+           |     |   |__about.dart
+           |     |   |__account.dart
+           |     |   |__edit.dart
+           |     |   |__manageAddress.dart
+           |     |   |__textfromfieldcus.dart
+           |     |_bestoffer/
+           |     |   |_bestoffer.dart
+           |     |   |__bestofferlist.dart
+           |     |_cart/
+           |     |   |_bottomsheetcheckout.dart
+           |     |   |__cartitem.dart
+           |     |   |__cartprovider.dart
+           |     |   |__cartscreen.dart
+           |     |   |__detailscreen.dart
+           |     |   |__dynamiccart.dart  
+           |     |_cleanServices/
+           |     |   |_cleaningscreen.dart
+           |     |   |__cleanview.dart
+           |     |   |__deepcleaning.dart 
+           |     |_offer/
+           |     |   |_offerscreen.dart  
+           |     |_pestControl/
+           |     |   |_postcontrolList.dart  
+           |     |   |_postcontrolwidget.dart  
+           |     |_search/
+           |     |   |_servicesViewAll/ 
+           |     |   |   |_servicesmodel.dart  
+           |     |   |_search_details.dart  
+           |     |   |_searchbar.dart  
+           |     |_services/ 
+           |     |   |  
+           |     |   |_allservices.dart  
+           |     |   |_cleninglist.dart  
+           |     |   |_mainservices.dart  
+           |     |   |_service.dart  
+           |     |   |_subchildren.dart  
+           |     |   |_subcategory.dart  
+           |     |   |_service.dart  
+           |     |   |_subchildren.dart  
+           |     |   |_subcategory.dart  
+           |     |   |_timeslot.dart  
+           |     |_topbookenservices/
+           |     |   |_topbooklist.dart  
+           |     |   |_topbookedscreen.dart   
+           |     |_categories.dart  
+           |     |_homeappbaractions.dart  
+           |     |_homedrawerlist.dart  
+           |     |_home.dart  
+           |     |_mainscreen.dart   
+           |     |_slidercrousal.dart   
+           |__login/ 
+           |     |_customphonefield.dart  
+           |     |_login.dart                               
+           |__model/
+           |     |_allservicesmodel.dart  
+           |     |_searchall.dart   
+           |     |_topremmoneded
+           |__onboarding/
+           |     |_onBoardingscreen.dart  
+           |     |_onBoardingscreen1.dart   
+           |     |_splashscreen          
+           |
+           |__otp/
+           |   |_otp.dart    
+           |
+│   │__ provider
+           |__account/
+           |   |_accountprovider.dart              
+           |
+           |__cleanly/
+                 |_deepcleanly.dart  
+           |     |_subcateprovider.dart   
+           |     |_timeslotprovider.dart           
+           |
+           |__history_provide/
+           |   |_historyprovider.dart             
+           |
+           |__home/
+           |     |_bestoffer/
+           |     |   |_bestoffer.dart            
+           |     |_service/
+           |     |   |_cleaningscreen.dart  
+           |     |   |_servicenavigation.dart 
+           |     |_topremmoneded/
+           |     |   |_topremmoneded.dart 
+           |     |_bottomnavigation_provider.dart   
+           |     |_carouselprovider.dart
+           |     |_categories_provider.dart                      
+           |__app_state_provider.dart
+           |
+           |__login_provider.dart
+           |
+           |__map_provider.dart
+           |
+           |__otp_provider.dart
+           |
+           |__product_provider.dart
+           |
+│   │__ routes
+           |
+           |__generateRoute.dart
+           |
+           |__route_names.dart
+           |
+│   │__ theme
+           |
+           |__app_theme.dart
+           |
+           |__styling.dart
+           |
+           |__theme_notifier.dart
+           |
+├── test/                   # Unit and widget tests
+├── assets/                 # Images, fonts, and other assets
+├── pubspec.yaml            # Project dependencies and assets
+├── README.md               # Project documentation
+└── .gitignore              # Files to ignore in Git
+  
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>Api integrate Url>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const String baseUrl="https://dev.carely.me/api/v1/";
+const String phoneAuth="${baseUrl}auth/phone-auth";
+const String verification="${baseUrl}auth/phone-auth/verification";
+const String updateDetails="${baseUrl}user/update-details";
+const String getupdateDetails="${baseUrl}user/me";
+const String addtocartId="${baseUrl}cart/add-to-cart";
+>>>>>>>>>>>>>all services get url>>>>>>>>>>>>>>>>
+'${baseUrl}services/all-services'
+>>>>>>>>>>>>>all search api services>>>>>>>>>>>>>>>>
+    // Fetch first API data
+    final response1 = await http.get(Uri.parse('https://prod.carely.me/api/v1/services/search?name=${searchName}'));
+
+    // Fetch second API data
+    final response2 = await http.get(Uri.parse('https://prod.carely.me/api/v1/services/all-services'));
+>>>>>>>>>>>>>Top recommended api services>>>>>>>>>>>>>>>>
+    ${baseUrl}services/recommended-services?id=7'
